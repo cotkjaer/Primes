@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F57787D1FFA834300F2B147 /* PrimesToTest.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8F57787C1FFA834300F2B147 /* PrimesToTest.csv */; };
 		8FB2173F1F9F578800361834 /* Primes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB217351F9F578700361834 /* Primes.framework */; };
 		8FB217441F9F578800361834 /* PrimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB217431F9F578800361834 /* PrimesTests.swift */; };
 		8FB217461F9F578800361834 /* Primes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB217381F9F578700361834 /* Primes.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F57787C1FFA834300F2B147 /* PrimesToTest.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = PrimesToTest.csv; sourceTree = "<group>"; };
 		8FB217351F9F578700361834 /* Primes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Primes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FB217381F9F578700361834 /* Primes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Primes.h; sourceTree = "<group>"; };
 		8FB217391F9F578700361834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				8FB217431F9F578800361834 /* PrimesTests.swift */,
+				8F57787C1FFA834300F2B147 /* PrimesToTest.csv */,
 				8FB217451F9F578800361834 /* Info.plist */,
 			);
 			path = PrimesTests;
@@ -190,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F57787D1FFA834300F2B147 /* PrimesToTest.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -37,5 +37,37 @@ extension Int
         
         return true
     }
-}
+    
+    public var primeFactorization: [Int]
+    {
+        guard self < 997*997 else { fatalError("Direct Search Factorization is only for smaller numbers" )}
+        
+        return Int.directSearchPrimeFactorize(number: self, primeIndex: 0)
+    }
 
+    private static func directSearchPrimeFactorize(number: Int, primeIndex: Int) -> [Int]
+    {
+        guard number > 1 else { return [] }
+        
+        guard !number.isPrime else { return [number] }
+        
+        let prime = PrimesLessThan1000[primeIndex]
+        
+        if number % prime != 0
+        {
+            return directSearchPrimeFactorize(number: number, primeIndex: primeIndex + 1)
+        }
+
+        var remainder = number
+        
+        var factors: [Int] = []
+
+        while remainder % prime == 0
+        {
+            factors.append(prime)
+            remainder /= prime
+        }
+        
+        return factors + directSearchPrimeFactorize(number: remainder, primeIndex: primeIndex + 1)
+    }
+}
